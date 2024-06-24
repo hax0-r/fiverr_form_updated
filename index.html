@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <img src="./logo.png" style="height: 2rem;" alt="">
+        </nav>
+        <h1>XBuild Roof Installation Details Form</h1>
+        <hr>
+        <form id="contactForm">
+            <div class="scopeConnect">
+                <h2>Scope Connect-Related Question</h2>
+                <div class="main">
+                    <div class="right">
+                        <label> Homeowner Name </label>
+                        <input id="HomeownerName" type="text" placeholder="Enter Name">
+                        <label> Homeowner Address</label>
+                        <input id="HomeownerAddress" type="text" placeholder="Enter Address">
+                    </div>
+                    <div class="left">
+                        <label style="padding-top: 0;"> Company Name to Show on Scope</label>
+                        <input id="companyname" type="text" placeholder="Enter Company Name">
+                        <label>Have you submitted photos to XBuild?</label>
+                        <div class="radio">
+                            <div class="photoradio">
+                                <input type="radio" id="photoSubmissionYes" name="photoSubmission" value="Yes">
+                                <label for="photoSubmissionYes">Yes</label>
+                            </div>
+                            <div class="photoradio">
+                                <input type="radio" id="photoSubmissionNo" name="photoSubmission" value="No">
+                                <label for="photoSubmissionNo">No</label>
+                            </div>
+                            <div class="photoradio">
+                                <input type="radio" id="photoSubmissionLater" name="photoSubmission"
+                                    value="Will Send at a later time">
+                                <label for="photoSubmissionLater">Will Send at a later time</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="basicSliding">
+                <div class="gutters">
+                    <h2>Type of Claim </h2>
+                </div>
+                <div class="materialSub">
+                    <div class="second">
+
+                        <label class="pt-4 pb-2" for="">Type of Claim</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="TypeofClaim" aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="Entire Claim start to finish">Entire Claim start to finish</option>
+                                <option value="Supplement">Supplement</option>
+                                <option value="Unknow">Unknow</option>
+                            </select>
+                            <label for="floatingSelect">Please selects</label>
+                        </div>
+
+
+                    </div>
+                    <div class="first">
+                        <label class="pt-4 pb-2" for="">Trades to be produced by the contractor?</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="Tradestobeproducedbythecontractor"
+                                aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="Roof Only">Roof Only</option>
+                                <option value="Siding">Siding</option>
+                                <option value="Gutters">Gutters</option>
+                                <option value="Windows / Doors">Windows / Doors</option>
+                                <option value="Heat / AC">Heat / AC</option>
+                                <option value="Drywall">Drywall</option>
+                                <option value="Paint">Paint</option>
+                                <option value="Sub Contractor Estimates">Sub Contractor Estimates</option>
+                                <option value="Others">Others</option>
+                            </select>
+                            <label for="Tradestobeproducedbythecontractor">Please selects</label>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <label class="pt-4 pb-2" for="">Structure</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="Structure" aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="Main Dwelling">Main Dwelling</option>
+                                <option value="Shed">Shed</option>
+                                <option value="Fence">Fence</option>
+                                <option value="Deck">Deck</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <label for="floatingSelect">Please selects</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="materialSub" style="padding-top: 1rem;">
+                    <div class="second">
+                        <label class="pt-4 pb-2" for="CurrentStatewithInsurance">Current State with Insurance </label>
+                        <div class="form-floating">
+                            <select class="form-select" id="CurrentStatewithInsurance"
+                                aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="Full Approved">Full Approved</option>
+                                <option value="Partial Approval">Partial Approval</option>
+                                <option value="Denied">Denied</option>
+                                <option value="Discontinued Material">Discontinued Material</option>
+                                <option value="Loss Summary Provided">Loss Summary Provided</option>
+                                <option value="No Insurance Information">No Insurance Information</option>
+                                <option value="Repair Only">Repair Only</option>
+                            </select>
+                            <label for="floatingSelect">Please selects</label>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <label class="pt-4 pb-2" for="Doyouhaveameasurementreport">Do you have a measurement
+                            report?</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="Doyouhaveameasurementreport"
+                                aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                            <label for="floatingSelect">Please selects</label>
+                        </div>
+                    </div>
+                    <div class="first">
+
+                        <label class="pt-4 pb-2" for="StageofClaim">Stage of Claim</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="StageofClaim" aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="Pre Production">Pre Production</option>
+                                <option value="Post Production">Post Production</option>
+                                <option value="Unknown">Unknown</option>
+                            </select>
+                            <label for="floatingSelect">Please selects</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="basicSliding" style="padding-top: 1rem;">
+                    <div class="materialSub">
+
+                        <div class="second">
+                            <label class="pt-4 pb-2" for="Anyadditionalnotesfortheclaim">Any additional notes for the
+                                claim</label>
+                            <div class="tetxArea">
+                                <textarea id="Anyadditionalnotesfortheclaim" class="rounded" name="" rows="2"
+                                    placeholder="Your Answer" id=""></textarea>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <label class="pt-4 pb-2" for="InsuranceCompany">Insurance Company </label>
+                            <div class="tetxArea">
+                                <textarea id="InsuranceCompany" class="rounded" name="" rows="2"
+                                    placeholder="Your Answer" id=""></textarea>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <label class="pt-4 pb-2" for="ClaimNumber">Claim Number</label>
+                            <div class="tetxArea">
+                                <textarea id="ClaimNumber" class="rounded" name="" rows="2" placeholder="Your Answer"
+                                    id=""></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="pleaseNote">
+                    <h2>Please Note:</h2>
+                    <ul>
+                        <li>The following questions are optional.</li>
+                        <li>If a question is answered, the answer will OVERRIDE what is visible from aerial imagery as
+                            well as building codes.</li>
+                        <li>The Scope of Work is for a full roof replacement only.</li>
+                        <li>If Gutters, Solar, Metal Roof or Low Slope Component are selected, those questions are
+                            mandatory.</li>
+                    </ul>
+                </div>
+
+                <!-- ==================== -->
+
+
+                <div class="roofDetails">
+                    <h2>Basic Roof Details</h2>
+                    <div class="maininputs">
+                        <div class="left">
+                            <label for="Whatisthecurrentroofingmaterial">What is the current roofing material?</label>
+                            <div class="form-floating">
+                                <select class="form-select" id="Whatisthecurrentroofingmaterial"
+                                    aria-label="Floating label select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="Three Tab Asphalt">Three Tab Asphalt</option>
+                                    <option value="Architectural Asphalt">Architectural Asphalt</option>
+                                    <option value="Luxuey / Desgin Asphalt">Luxuey / Desgin Asphalt</option>
+                                    <option value="Slate">Slate</option>
+                                    <option value="Tile">Tile</option>
+                                    <option value="Cedar">Cedar</option>
+                                    <option value="Metal">Metal</option>
+                                </select>
+                                <label for="Whatareyouinstallingontheroof">Please selects</label>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <label for="">What are you installing on the roof? </label>
+                            <div class="form-floating">
+                                <select class="form-select" id="Whatareyouinstallingontheroof"
+                                    aria-label="Floating label select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="Three Tab Asphalt">Three Tab Asphalt</option>
+                                    <option value="Architectural Asphalt">Architectural Asphalt</option>
+                                    <option value="Luxuey / Desgin Asphalt">Luxuey / Desgin Asphalt</option>
+                                    <option value="Slate">Slate</option>
+                                    <option value="Tile">Tile</option>
+                                    <option value="Cedar">Cedar</option>
+                                    <option value="Metal">Metal</option>
+                                </select>
+                                <label for="floatingSelect">Please selects</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="radiosRoof">
+                        <div class="left">
+                            <label>If not required by codes, add Ice and water shield to Scope of Work? </label>
+                            <div class="radio">
+                                <div class="first">
+                                    <input type="radio" name="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWork"
+                                        id="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWorkNo" value="No">
+                                    <h3>No</h3>
+                                </div>
+                                <div class="second">
+                                    <input type="radio" name="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWork"
+                                        id="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWorkValleys"
+                                        value="Valleys">
+                                    <h3>Valleys</h3>
+                                </div>
+                                <div class="second">
+                                    <input type="radio" name="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWork"
+                                        id="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWorkEavesandValleys"
+                                        value="Eaves and Valleys">
+                                    <h3 style="text-wrap: nowrap;">Eaves and Valleys</h3>
+                                </div>
+                            </div>
+
+                            <label>Should this be written to FORTIFIED standards? </label>
+                            <div class="radio">
+                                <div class="first">
+                                    <input id="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWorkYes"
+                                        name="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWork" type="radio"
+                                        value="Yes">
+                                    <h3>Yes</h3>
+                                </div>
+                                <div class="second">
+                                    <input id="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWorkNo"
+                                        name="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWork" type="radio"
+                                        value="No">
+                                    <h3>No</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <label>If not required by codes, add drip edge to Scope of Work?</label>
+                            <div class="radio pb-5">
+                                <div class="first">
+                                    <input id="ShouldthisbewrittentoFORTIFIEDstandardsYes"
+                                        name="ShouldthisbewrittentoFORTIFIEDstandards" type="radio" value="Yes">
+                                    <h3>Yes</h3>
+                                </div>
+                                <div class="second">
+                                    <input id="ShouldthisbewrittentoFORTIFIEDstandardsNo"
+                                        name="ShouldthisbewrittentoFORTIFIEDstandards" type="radio" value="No">
+                                    <h3>No</h3>
+                                </div>
+                            </div>
+                            <label>Is Redeck needed?</label>
+                            <div class="radio">
+                                <div class="first">
+                                    <input type="radio" id="IsRedeckneededYes" name="IsRedeckneeded" value="Yes">
+                                    <h3>Yes</h3>
+                                </div>
+                                <div class="second">
+                                    <input type="radio" id="IsRedeckneededNo" name="IsRedeckneeded" value="No">
+                                    <h3>No</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="IfyestypeorRedeckisneededs">
+                        <label for="IfyestypeorRedeckisneeded">If yes, type or Redeck is needed:</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="IfyestypeorRedeckisneeded"
+                                aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="OSB 1/2">OSB 1/2</option>
+                                <option value="OSB 5/8">OSB 5/8</option>
+                                <option value="CDX Plywood 3/8">CDX Plywood 3/8</option>
+                                <option value="CDX Plywood 1/2">CDX Plywood 1/2</option>
+                                <option value="CDX Plywood 5/8">CDX Plywood 5/8</option>
+                            </select>
+                            <label for="floatingSelect">Please selects</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ============= -->
+
+                <div class="solar" style="padding-top: 0;">
+                    <div class="slope" style="padding-top: 0;">
+                        <!-- <h2>Low Slope Component</h2> -->
+                        <label class="pb-1"  for="lowSlopeComponent">Is there a low slope component on the
+                            roof?</label>
+                        <div class="radio">
+                            <div class="first">
+                                <input type="radio" name="lowSlopeComponent" id="lowSlopeYes" value="Yes">
+                                <h3>Yes</h3>
+                            </div>
+                            <div class="second">
+                                <input type="radio" name="lowSlopeComponent" id="lowSlopeNo" value="No">
+                                <h3>No</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="IfYesmodifiedbitumenpresents">
+                        <label class="pb-2 pt-5" for="">If Yes, Is modified bitumen present</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="IfYesmodifiedbitumenpresent"
+                                aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="No">No</option>
+                                <option value="Peel and Stick">Peel and Stick</option>
+                                <option value="Torched Down">Torched Down</option>
+                                <option value="Hot Mopped">Hot Mopped</option>
+                            </select>
+                            <label for="floatingSelect">Please selects</label>
+                        </div>
+                    </div>
+
+
+                    <!-- ============= -->
+
+                    <div class="solar">
+
+                        <div class="slope" style="padding-top: 0;">
+                            <h2>Metal Roof</h2>
+                            <label class="pb-1 pt-2" for="metalRoofPresent">Is there a metal roof present?</label>
+                            <div class="radio">
+                                <div class="first">
+                                    <input type="radio" name="metalRoofPresent" id="metalRoofYes" value="Yes">
+                                    <h3>Yes</h3>
+                                </div>
+                                <div class="second">
+                                    <input type="radio" name="metalRoofPresent" id="metalRoofNo" value="No">
+                                    <h3>No</h3>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="metalRoofs">
+                            <div class="typeMental">
+                                <div class="left">
+                                    <label class="pb-2" for="">What type of metal roof is present?</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="Whattypemetalroofpresent"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Standing Seam">Standing Seam</option>
+                                            <option value="Corrugated Panel">Corrugated Panel</option>
+                                            <option value="Ribbed Panel">Ribbed Panel</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <label class="pb-2" for="">What gauge of metal?</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="Whatgaugeofmetal"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="26">26</option>
+                                            <option value="29">29</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="typeMental">
+                                <div class="left">
+                                    <label class="pb-2" for="">What type of finish are present?</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="Whattypeoffinisharepresent"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Color">Color</option>
+                                            <option value="Galvanized">Galvanized</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <label class="pb-2" for="">Include trim metal?</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="Includetrimmetal"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Rack Gable Trim">Rack Gable Trim</option>
+                                            <option value="Eave Closure Metal">Eave Closure Metal</option>
+                                            <option value="Both">Both</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="typeMental">
+                                <div class="left">
+                                    <label class="pb-2" for="">If underlayment is required, which type? </label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="underlaymentrequiredwhichtype"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Synthetic Fely">Synthetic Fely</option>
+                                            <option value="Leak Barrier">Leak Barrier</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================== -->
+
+                    <div class="typeVenting">
+                        <h2>What type of venting is currently on the roof?</h2>
+                        <div class="mainBox">
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="ridgeVentCheckbox">
+                                    <p>Ridge Vent</p>
+                                </div>
+                                <input type="text" id="ridgeVentInput" placeholder="Linear Feet">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="boxVentCheckbox">
+                                    <p>Box Vent</p>
+                                </div>
+                                <input type="text" id="boxVentInput" placeholder="Number">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="gableVentCheckbox">
+                                    <p>Gable Vent</p>
+                                </div>
+                                <input type="text" id="gableVentInput" placeholder="Number">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="tradPowerVentCheckbox">
+                                    <p>Trad. Power Vent</p>
+                                </div>
+                                <input type="text" id="tradPowerVentInput" placeholder="Number">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="solarPowerVentCheckbox">
+                                    <p>Solar Power Vent</p>
+                                </div>
+                                <input type="text" id="solarPowerVentInput" placeholder="Number">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="othersCheckbox">
+                                    <p>Others</p>
+                                </div>
+                                <input type="text" id="othersInput" placeholder="Please Specify">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typeVenting">
+                        <h2>How many roof penetrations are present?</h2>
+                        <div class="mainBox">
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="LeadPipeBootCheckbox">
+                                    <p>Lead Pipe Boot</p>
+                                </div>
+                                <input type="text" placeholder="Number" id="LeadPipeBootInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="RubberPipeBootCheckbox">
+                                    <p>Rubber Pipe Boot</p>
+                                </div>
+                                <input type="text" placeholder="Number" id="RubberPipeBootInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="SplitBootCheckbox">
+                                    <p>Split Boot</p>
+                                </div>
+                                <input type="text" placeholder="Number" id="SplitBootInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="ChimneyCheckbox">
+                                    <p>Chimney</p>
+                                </div>
+                                <input type="text" placeholder="Number" id="ChimneyInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="SkylightFlashingOnlyCheckbox">
+                                    <p>Skylight (Flashing Only)</p>
+                                </div>
+                                <input type="text" placeholder="Number" id="SkylightFlashingOnlyInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="SkylightFullReplacementCheckbox">
+                                    <p>Skylight (Full Replacement)</p>
+                                </div>
+                                <input type="text" placeholder="Number" id="SkylightFullReplacementInput">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="typeVenting">
+                        <h2>Detach and Reset</h2>
+                        <div class="mainBox">
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="ShuttersCheckbox">
+                                    <p>Shutters</p>
+                                </div>
+                                <input type="text" placeholder="# of Units" id="ShuttersInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="ExteriorLightFixturesCheckbox">
+                                    <p>Exterior Light Fixtures</p>
+                                </div>
+                                <input type="text" placeholder="# of Units" id="ExteriorLightFixturesInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="ExteriorOutletsSwitchesCheckbox">
+                                    <p>Exterior Outlets or Switches</p>
+                                </div>
+                                <input type="text" placeholder="# of Units" id="ExteriorOutletsSwitchesInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="ExteriorFaucetsHoseBibbCheckbox">
+                                    <p>Exterior Faucets/hose bibb</p>
+                                </div>
+                                <input type="text" placeholder="# of Units" id="ExteriorFaucetsHoseBibbInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="ClothesDryerVentCoversCheckbox">
+                                    <p>Clothes Dryer vent Covers</p>
+                                </div>
+                                <input type="text" placeholder="# of Units" id="ClothesDryerVentCoversInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="LowVoltageBoxesCheckbox">
+                                    <p>Low Voltages Boxes</p>
+                                </div>
+                                <input type="text" placeholder="# of Units" id="LowVoltageBoxesInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="MeterBaseMainDisconnectCheckbox">
+                                    <p>Meter base and main disconnect</p>
+                                </div>
+                                <input type="text" placeholder="# of Units" id="MeterBaseMainDisconnectInput">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- material is in valley -->
+
+                    <div class="roofDetails">
+                        <div class="radiosRoof" style="padding-top: 1rem;">
+                            <div class="left">
+                                <label>What material is in the Valleys? </label>
+                                <div class="radio" style="gap: 4rem;">
+                                    <div class="first">
+                                        <input type="radio" id="roofDetailsmetal" name="roofDetails"
+                                            value="Closed - Metal">
+                                        <h3 style="text-wrap: nowrap;">Closed - Metal</h3>
+                                    </div>
+                                    <div class="second">
+                                        <input type="radio" id="roofDetailsLeakBarrier" name="roofDetails"
+                                            value="Closed - Leak Barrier">
+                                        <h3 style="text-wrap: nowrap;">Closed - Leak Barrier</h3>
+                                    </div>
+                                    <div class="second">
+                                        <input type="radio" id="roofDetailsmetalopen" name="roofDetails"
+                                            value="Open - Metal">
+                                        <h3 style="text-wrap: nowrap;">Open - Metal</h3>
+                                    </div>
+                                    <div class="second">
+                                        <input type="radio" id="roofDetailsWmetal" name="roofDetails"
+                                            value="Open - W Metal">
+                                        <h3 style="text-wrap: nowrap;">Open - W Metal</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Are there any other additional layers of removal? -->
+
+                    <div class="typeVenting" style="padding-top: 0rem;">
+                        <h2>Are there any other additional layers of removal?</h2>
+                        <div class="mainBox">
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="ShingleLayersCheckbox">
+                                    <p>Shingle Layers</p>
+                                </div>
+                                <input type="text" placeholder="Number" id="ShingleLayersInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="FeltUnderlaymentLayersCheckbox">
+                                    <p>Felt/Underlayment Layers</p>
+                                </div>
+                                <input type="text" placeholder="Number" id="FeltUnderlaymentLayersInput">
+                            </div>
+                            <div class="box">
+                                <div class="check">
+                                    <input type="checkbox" id="WoodShakeShingleLayersCheckbox">
+                                    <p>Wood Shake/Wood Shingle Layers</p>
+                                </div>
+                                <input type="text" placeholder="Number" id="WoodShakeShingleLayersInput">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gutters">
+                        <h2>Gutters</h2>
+                        <label for="">Add gutters to Scope of Work?</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="AddgutterstoScopeofWork"
+                                aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                            <label for="floatingSelect">Please selects</label>
+                        </div>
+                        <div id="AddgutterstoScopeofWorks">
+                            <div class="typeGutter">
+                                <div class="left">
+                                    <label for="">If yes, What type of gutters are currently on the house?</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="IfyesWhattypeofguttersarecurrentlyonthehouse"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Aluminum">Aluminum</option>
+                                            <option value="Copper">Copper</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <label for="">What is the size of gutters?</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="Whatisthesizeofgutters"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="downspouts">
+                                <div class="left">
+                                    <label for="">What is the size of the downspouts?</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="Whatisthesizeofthedownspouts"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="2х3">2х3</option>
+                                            <option value="3x4">3x4</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <label for="">What is the linear feet(LF) of the gutters and downspouts?</label>
+                                    <div class="l">
+                                        <input type="text" placeholder="Gutters" id="linearfeetofthegutters">
+                                        <input type="text" placeholder="downspouts" id="linearfeetofthedownspouts">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="splashGuards">
+                                <div class="left">
+                                    <label for="">How many splash guards are currently on the house?</label>
+                                    <input type="text" placeholder="Gutters" id="Howmanyguardscurrentlyhouse">
+                                </div>
+                                <div class="right">
+                                    <label for="">Are there additional accessories installed on the gutters?</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="Areadditionalinstalledgutters"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                    <textarea rows="2" placeholder="additional accessories installed"
+                                        id="additionalaccessoriesinstalled"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solar">
+                        <h2>Solar</h2>
+                        <label class="pb-2" for="">Is there a solar on the roof?</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="Isthereasolarontheroof"
+                                aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                            <label for="floatingSelect">Please selects</label>
+                        </div>
+
+                        <div class="solarPanels" id="solarPanelsId">
+                            <div class="left">
+                                <label class="pb-2" for="">If yes, Should solar panel be detached and reset?</label>
+                                <div class="form-floating">
+                                    <select class="form-select" id="Ifyessolarpaneldetachedreset"
+                                        aria-label="Floating label select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                    <label for="floatingSelect">Please selects</label>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <label class="pb-2" for="">How many mounts are present?</label>
+                                <div class="l">
+                                    <input type="text" placeholder="Solar Panels" id="Howmanyolarpanelsarepresent">
+                                    <input type="text" placeholder="Mounts" id="Howmanymountsarepresent">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ========================== -->
+
+
+
+
+                    <div class="basicSliding">
+                        <div class="gutters">
+                            <h2>Basic Siding Details</h2>
+                            <label for="SelectReplacement">Select Replacement</label>
+                            <div class="form-floating">
+                                <select class="form-select" id="SelectReplacement"
+                                    aria-label="Floating label select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="Full House Replacment?">Full House Replacment?</option>
+                                    <option value="Partial Replacement">Partial Replacement</option>
+                                    <option value="Small Repairs">Small Repairs</option>
+                                </select>
+                                <label for="FullHouseReplacment">Please selects</label>
+                            </div>
+                        </div>
+                        <div class="materialSub" id="materialSubId">
+                            <div class="second">
+                                <label class="pt-4 pb-2" for="FullHouseReplacment">Full House Replacment?
+                                </label>
+                                <div class="form-floating">
+                                    <select class="form-select" id="FullHouseReplacment"
+                                        aria-label="Floating label select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="Front">Front</option>
+                                        <option value="Right">Right</option>
+                                        <option value="Rear">Rear</option>
+                                        <option value="Left">Left</option>
+                                    </select>
+                                    <label for="PartialReplacement">Please selects</label>
+                                </div>
+                            </div>
+                            <div class="first">
+                                <label class="pt-4 pb-2" for="PartialReplacement">Partial Replacement
+                                </label>
+                                <div class="form-floating">
+                                    <select class="form-select" id="PartialReplacement"
+                                        aria-label="Floating label select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="Front">Front</option>
+                                        <option value="Right">Right</option>
+                                        <option value="Rear">Rear</option>
+                                        <option value="Left">Left</option>
+                                    </select>
+                                    <label for="floatingSelect">Please selects</label>
+                                </div>
+                            </div>
+                            <div class="second">
+                                <label class="pt-4 pb-2" for="SmallRepairs">Small Repairs</label>
+                                <div class="tetxArea">
+                                    <textarea name="" rows="2" placeholder="Insert Scope of Work Here for small repairs
+                            " id="SmallRepairs"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- ========================== -->
+
+
+
+                    <div class="material">
+                        <h2>Siding Material Type</h2>
+                        <label class=" pb-2" for="">Style of Material</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="StyleofMaterial" aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="Vinyl">Vinyl</option>
+                                <option value="Cement Fiber">Cement Fiber</option>
+                                <option value="Wood">Wood</option>
+                                <option value="Metal">Metal</option>
+                            </select>
+                            <label for="floatingSelect">Please selects</label>
+                        </div>
+                        <div id="sidingMaterialSubId">
+                            <div class="materialSub">
+                                <div class="first">
+                                    <label class="pt-4 pb-2" for="">Vinyl</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="Vinyl"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Vinyl">Vinyl</option>
+                                            <option value="Cement Fiber">Cement Fiber</option>
+                                            <option value="Wood">Wood</option>
+                                            <option value="Metal">Metal</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <label class="pt-4 pb-2" for="">Cement Fiber</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="CementFiber"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Size or Exposure">Size or Exposure</option>
+                                            <option value="Corner Board Size">Corner Board Size</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <label class="pt-4 pb-2" for="">Metal</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="Metales"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Gauge">Gauge</option>
+                                            <option value="Metal type">Metal type</option>
+                                            <option value="Size or Exposure">Size or Exposure</option>
+                                            <option value="Corner Board Size">Corner Board Size</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="materialSub">
+                                <div class="first">
+                                    <label class="pt-4 pb-2" for="">Cement Fiber/Wood (Painting)</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="CementFiberWoodPainting"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Full House">Full House</option>
+                                            <option value="Front">Front</option>
+                                            <option value="Right">Right</option>
+                                            <option value="Rear">Rear</option>
+                                            <option value="Left">Left</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <label class="pt-4 pb-2" for="WoodStaining">Wood (Staining)</label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="WoodStaining"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Full House">Full House</option>
+                                            <option value="Front">Front</option>
+                                            <option value="Right">Right</option>
+                                            <option value="Rear">Rear</option>
+                                            <option value="Left">Left</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fascia">
+                        <div class="basicSliding">
+                            <div class="gutters">
+                                <h2>Fascia Replacement</h2>
+                                <label for="replacementSelect">Select Replacement</label>
+                                <div class="form-floating">
+                                    <select class="form-select fasciamaterialSubClass" id="replacementSelect" aria-label="Floating label select example">
+                                        <option selected value="">Open this select menu</option>
+                                        <option value="Full House Replacement">Full House Replacement</option>
+                                        <option value="Partial Replacement">Partial Replacement</option>
+                                        <option value="Small Repairs">Small Repairs</option>
+                                    </select>
+                                    <label for="replacementSelect">Please select</label>
+                                </div>
+                            </div>
+                    
+                            <div id="fasciamaterialSubId">
+                                <div id="fullHouseReplacementSection" class="materialSub" style="display: none;">
+                                    <div class="second">
+                                        <label class="pt-4 pb-2" for="fullHouseReplacementSelect">Full House Replacement?</label>
+                                        <div class="form-floating">
+                                            <select class="form-select" id="fullHouseReplacementSelect" aria-label="Floating label select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="Front">Front</option>
+                                                <option value="Right">Right</option>
+                                                <option value="Rear">Rear</option>
+                                                <option value="Left">Left</option>
+                                            </select>
+                                            <label for="fullHouseReplacementSelect">Please select</label>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div id="partialReplacementSection" class="materialSub" style="display: none;">
+                                    <div class="first">
+                                        <label class="pt-4 pb-2" for="partialReplacementSelect">Partial Replacement</label>
+                                        <div class="form-floating">
+                                            <select class="form-select" id="partialReplacementSelect" aria-label="Floating label select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="Front">Front</option>
+                                                <option value="Right">Right</option>
+                                                <option value="Rear">Rear</option>
+                                                <option value="Left">Left</option>
+                                            </select>
+                                            <label for="partialReplacementSelect">Please select</label>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div id="smallRepairsSection" class="materialSub" style="display: none;">
+                                    <div class="second">
+                                        <label class="pt-4 pb-2" for="smallRepairsTextArea">Small Repairs</label>
+                                        <div class="textArea">
+                                            <textarea name="" rows="2" placeholder="Insert Scope of Work Here for small repairs" id="smallRepairsTextArea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="materialSub">
+                                    <div class="first">
+                                        <label class="pt-4 pb-2" for="materialTypeSelect">Material Type</label>
+                                        <div class="form-floating">
+                                            <select class="form-select" id="materialTypeSelect" aria-label="Floating label select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="Vinyl">Vinyl</option>
+                                                <option value="Cement Fiber">Cement Fiber</option>
+                                                <option value="Wood">Wood</option>
+                                                <option value="Metal">Metal</option>
+                                            </select>
+                                            <label for="materialTypeSelect">Please select</label>
+                                        </div>
+                                    </div>
+                                    <div class="second">
+                                        <label class="pt-4 pb-2" for="paintingSelect">Cement Fiber/Wood (Painting)</label>
+                                        <div class="form-floating">
+                                            <select class="form-select" id="paintingSelect" aria-label="Floating label select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="Full House">Full House</option>
+                                                <option value="Front">Front</option>
+                                                <option value="Right">Right</option>
+                                                <option value="Rear">Rear</option>
+                                                <option value="Left">Left</option>
+                                            </select>
+                                            <label for="paintingSelect">Please select</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                    
+                    <div class="fascia">
+                        <div class="basicSliding">
+                            <div class="gutters">
+                                <h2>Soffit Replacement</h2>
+                                <label for="soffitReplacementSelect">Select Replacement</label>
+                                <div class="form-floating">
+                                    <select class="form-select" id="soffitReplacementSelect" aria-label="Floating label select example">
+                                        <option selected value="">Open this select menu</option>
+                                        <option value="Full House Replacement">Full House Replacement</option>
+                                        <option value="Partial Replacement">Partial Replacement</option>
+                                        <option value="Small Repairs">Small Repairs</option>
+                                    </select>
+                                    <label for="soffitReplacementSelect">Please select</label>
+                                </div>
+                            </div>
+                    
+                            <div id="soffitMaterialSubId">
+                                <div id="soffitFullHouseReplacementSection" class="materialSub" style="display: none;">
+                                    <div class="second">
+                                        <label class="pt-4 pb-2" for="soffitFullHouseReplacementSelect">Full House Replacement?</label>
+                                        <div class="form-floating">
+                                            <select class="form-select" id="soffitFullHouseReplacementSelect" aria-label="Floating label select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="Front">Front</option>
+                                                <option value="Right">Right</option>
+                                                <option value="Rear">Rear</option>
+                                                <option value="Left">Left</option>
+                                            </select>
+                                            <label for="soffitFullHouseReplacementSelect">Please select</label>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div id="soffitPartialReplacementSection" class="materialSub" style="display: none;">
+                                    <div class="first">
+                                        <label class="pt-4 pb-2" for="soffitPartialReplacementSelect">Partial Replacement</label>
+                                        <div class="form-floating">
+                                            <select class="form-select" id="soffitPartialReplacementSelect" aria-label="Floating label select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="Front">Front</option>
+                                                <option value="Right">Right</option>
+                                                <option value="Rear">Rear</option>
+                                                <option value="Left">Left</option>
+                                            </select>
+                                            <label for="soffitPartialReplacementSelect">Please select</label>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div id="soffitSmallRepairsSection" class="materialSub" style="display: none;">
+                                    <div class="second">
+                                        <label class="pt-4 pb-2" for="soffitSmallRepairsTextArea">Small Repairs</label>
+                                        <div class="textArea">
+                                            <textarea name="" rows="2" placeholder="Insert Scope of Work Here for small repairs" id="soffitSmallRepairsTextArea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="materialSub">
+                                    <div class="first">
+                                        <label class="pt-4 pb-2" for="soffitMaterialTypeSelect">Material Type</label>
+                                        <div class="form-floating">
+                                            <select class="form-select" id="soffitMaterialTypeSelect" aria-label="Floating label select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="Vinyl">Vinyl</option>
+                                                <option value="Cement Fiber">Cement Fiber</option>
+                                                <option value="Wood">Wood</option>
+                                                <option value="Metal">Metal</option>
+                                            </select>
+                                            <label for="soffitMaterialTypeSelect">Please select</label>
+                                        </div>
+                                    </div>
+                                    <div class="second">
+                                        <label class="pt-4 pb-2" for="soffitPaintingSelect">Cement Fiber/Wood (Painting)</label>
+                                        <div class="form-floating">
+                                            <select class="form-select" id="soffitPaintingSelect" aria-label="Floating label select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="Full House">Full House</option>
+                                                <option value="Front">Front</option>
+                                                <option value="Right">Right</option>
+                                                <option value="Rear">Rear</option>
+                                                <option value="Left">Left</option>
+                                            </select>
+                                            <label for="soffitPaintingSelect">Please select</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- ===== -->
+                    
+                    
+                    <div class="fascia">
+                        <div class="basicSliding">
+                            <div class="gutters">
+                                <h2>Behind the Siding Details</h2>
+                                <label for="behindSidingSelect">Select Replacement</label>
+                                <div class="form-floating">
+                                    <select class="form-select" id="behindSidingSelect" aria-label="Floating label select example">
+                                        <option selected value="">Open this select menu</option>
+                                        <option value="Full House Replacement">Full House Replacement</option>
+                                        <option value="Partial Replacement">Partial Replacement</option>
+                                        <option value="Small Repairs">Small Repairs</option>
+                                    </select>
+                                    <label for="behindSidingSelect">Please select</label>
+                                </div>
+                            </div>
+                    
+                            <div id="behindSidingMaterialSubId">
+                                <div id="behindSidingFullHouseReplacementSection" class="materialSub" style="display: none;">
+                                    <div class="second">
+                                        <label class="pt-4 pb-2" for="behindSidingFullHouseReplacementSelect">Full House Replacement?</label>
+                                        <div class="form-floating">
+                                            <select class="form-select" id="behindSidingFullHouseReplacementSelect" aria-label="Floating label select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="Front">Front</option>
+                                                <option value="Right">Right</option>
+                                                <option value="Rear">Rear</option>
+                                                <option value="Left">Left</option>
+                                            </select>
+                                            <label for="behindSidingFullHouseReplacementSelect">Please select</label>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div id="behindSidingPartialReplacementSection" class="materialSub" style="display: none;">
+                                    <div class="first">
+                                        <label class="pt-4 pb-2" for="behindSidingPartialReplacementSelect">Partial Replacement</label>
+                                        <div class="form-floating">
+                                            <select class="form-select" id="behindSidingPartialReplacementSelect" aria-label="Floating label select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="Front">Front</option>
+                                                <option value="Right">Right</option>
+                                                <option value="Rear">Rear</option>
+                                                <option value="Left">Left</option>
+                                            </select>
+                                            <label for="behindSidingPartialReplacementSelect">Please select</label>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div id="behindSidingSmallRepairsSection" class="materialSub" style="display: none;">
+                                    <div class="second">
+                                        <label class="pt-4 pb-2" for="behindSidingSmallRepairsTextArea">Small Repairs</label>
+                                        <div class="textArea">
+                                            <textarea name="" rows="2" placeholder="Insert Scope of Work Here for small repairs" id="behindSidingSmallRepairsTextArea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                    <div class="fascia">
+                        <div class="basicSliding">
+                            <div class="gutters pt-4 mt-2">
+                                <h2>Wall Insulation </h2>
+                            </div>
+                            <div class="materialSub">
+                                <div class="second">
+                                    <label class="pt-0 pb-2" for="">Select Any One
+                                    </label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="WallInsulation"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Front">Front</option>
+                                            <option value="Right">Right</option>
+                                            <option value="Rear">Rear</option>
+                                            <option value="Left">Left</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="fascia">
+                        <div class="basicSliding">
+                            <div class="gutters" style="padding-top: 2rem;">
+                                <h2>Wall Sheathing</h2>
+                            </div>
+                            <div class="materialSub">
+                                <div class="second">
+                                    <label class="pt-0 pb-2" for="WallSheathing">Select Any One
+                                    </label>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="WallSheathing"
+                                            aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="Front">Front</option>
+                                            <option value="Right">Right</option>
+                                            <option value="Rear">Rear</option>
+                                            <option value="Left">Left</option>
+                                        </select>
+                                        <label for="floatingSelect">Please selects</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button type="submit">Submit Order</button>
+        </form>
+
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
