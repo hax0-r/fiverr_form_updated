@@ -21,7 +21,7 @@
         <form id="contactForm">
             <div class="scopeConnect">
                 <h2>Scope Connect-Related Question</h2>
-                <div class="main">
+                <div class="main flex-column flex-md-row">
                     <div class="right">
                         <label> Homeowner Name </label>
                         <input id="HomeownerName" type="text" placeholder="Enter Name">
@@ -31,7 +31,8 @@
                     <div class="left">
                         <label style="padding-top: 0; " class="pb-1"> Company Name to Show on Scope</label>
                         <input id="companyname" type="text" placeholder="Enter Company Name">
-                        <label style="padding-top: 3rem; padding-bottom: 1rem;">Have you submitted photos to XBuild?</label>
+                        <label style="padding-top: 3rem; padding-bottom: 1rem;">Have you submitted photos to
+                            XBuild?</label>
                         <div class="radio">
                             <div class="photoradio">
                                 <input type="radio" id="photoSubmissionYes" name="photoSubmission" value="Yes">
@@ -41,10 +42,12 @@
                                 <input type="radio" id="photoSubmissionNo" name="photoSubmission" value="No">
                                 <label style="padding-top: 0; padding-left: .5rem;" for="photoSubmissionNo">No</label>
                             </div>
-                            <div class="photoradio d-flex" >
+                            <div class="photoradio d-flex">
                                 <input type="radio" id="photoSubmissionLater" name="photoSubmission"
                                     value="Will Send at a later time">
-                                <label for="photoSubmissionLater" style="text-wrap: nowrap;padding-top: 0; padding-left: .5rem;">Will Send at a later time</label>
+                                <label for="photoSubmissionLater"
+                                    style="text-wrap: nowrap;padding-top: 0; padding-left: .5rem;">Will Send at a later
+                                    time</label>
                             </div>
                         </div>
                     </div>
@@ -200,7 +203,7 @@
 
                 <div class="roofDetails">
                     <h2>Basic Roof Details</h2>
-                    <div class="maininputs">
+                    <div class="maininputs flex-column flex-md-row">
                         <div class="left">
                             <label for="Whatisthecurrentroofingmaterial">What is the current roofing material?</label>
                             <div class="form-floating">
@@ -236,10 +239,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="radiosRoof">
+                    <div class="radiosRoof flex-column flex-md-row">
                         <div class="left">
                             <label>If not required by codes, add Ice and water shield to Scope of Work? </label>
-                            <div class="radio">
+                            <div class="radio" style="flex-wrap: wrap;">
                                 <div class="first">
                                     <input type="radio" name="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWork"
                                         id="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWorkNo" value="No">
@@ -260,7 +263,7 @@
                             </div>
 
                             <label>Should this be written to FORTIFIED standards? </label>
-                            <div class="radio">
+                            <div class="radio pb-0 pb-md-5 ">
                                 <div class="first">
                                     <input id="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWorkYes"
                                         name="IfnotrequiredbycodesaddIceandwatershieldtoScopeofWorks" type="radio"
@@ -290,7 +293,7 @@
                                 </div>
                             </div>
                             <label>Is Redeck needed?</label>
-                            <div class="radio">
+                            <div class="radio ">
                                 <div class="first">
                                     <input type="radio" id="IsRedeckneededYes" name="IsRedeckneeded" value="Yes">
                                     <h3>Yes</h3>
@@ -303,7 +306,7 @@
                         </div>
                     </div>
 
-                    <div id="IfyestypeorRedeckisneededs">
+                    <div id="IfyestypeorRedeckisneededs" class="pb-4">
                         <label for="IfyestypeorRedeckisneeded">If yes, type or Redeck is needed:</label>
                         <div class="form-floating">
                             <select class="form-select" id="IfyestypeorRedeckisneeded"
@@ -326,7 +329,7 @@
                 <div class="solar" style="padding-top: 0;">
                     <div class="slope" style="padding-top: 0;">
                         <!-- <h2>Low Slope Component</h2> -->
-                        <label class="pb-1"  for="lowSlopeComponent">Is there a low slope component on the
+                        <label class="pb-1" for="lowSlopeComponent">Is there a low slope component on the
                             roof?</label>
                         <div class="radio">
                             <div class="first">
@@ -377,7 +380,7 @@
 
 
                         <div id="metalRoofs">
-                            <div class="typeMental">
+                            <div class="typeMental flex-column flex-md-row">
                                 <div class="left">
                                     <label class="pb-2" for="">What type of metal roof is present?</label>
                                     <div class="form-floating">
@@ -404,7 +407,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="typeMental">
+                            <div class="typeMental flex-column flex-md-row">
                                 <div class="left">
                                     <label class="pb-2" for="">What type of finish are present?</label>
                                     <div class="form-floating">
@@ -608,7 +611,7 @@
                         <div class="radiosRoof" style="padding-top: 1rem;">
                             <div class="left">
                                 <label>What material is in the Valleys? </label>
-                                <div class="radio" style="gap: 4rem;">
+                                <div class="radio" style=" flex-wrap: wrap;row-gap: .5rem;column-gap: 4rem;">
                                     <div class="first">
                                         <input type="radio" id="roofDetailsmetal" name="roofDetails"
                                             value="Closed - Metal">
@@ -677,7 +680,7 @@
                             <label for="floatingSelect">Please selects</label>
                         </div>
                         <div id="AddgutterstoScopeofWorks">
-                            <div class="typeGutter">
+                            <div class="typeGutter flex-column flex-md-row">
                                 <div class="left">
                                     <label for="">If yes, What type of gutters are currently on the house?</label>
                                     <div class="form-floating">
@@ -704,7 +707,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="downspouts">
+                            <div class="downspouts flex-column flex-md-row">
                                 <div class="left">
                                     <label for="">What is the size of the downspouts?</label>
                                     <div class="form-floating">
@@ -725,7 +728,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="splashGuards">
+                            <div class="splashGuards flex-column flex-md-row">
                                 <div class="left">
                                     <label for="">How many splash guards are currently on the house?</label>
                                     <input type="text" placeholder="Gutters" id="Howmanyguardscurrentlyhouse">
@@ -955,7 +958,8 @@
                                 <h2>Fascia Replacement</h2>
                                 <label for="replacementSelect">Select Replacement</label>
                                 <div class="form-floating">
-                                    <select class="form-select fasciamaterialSubClass" id="replacementSelect" aria-label="Floating label select example">
+                                    <select class="form-select fasciamaterialSubClass" id="replacementSelect"
+                                        aria-label="Floating label select example">
                                         <option selected value="">Open this select menu</option>
                                         <option value="Full House Replacement">Full House Replacement</option>
                                         <option value="Partial Replacement">Partial Replacement</option>
@@ -964,13 +968,15 @@
                                     <label for="replacementSelect">Please select</label>
                                 </div>
                             </div>
-                    
+
                             <div id="fasciamaterialSubId">
                                 <div id="fullHouseReplacementSection" class="materialSub" style="display: none;">
                                     <div class="second">
-                                        <label class="pt-4 pb-2" for="fullHouseReplacementSelect">Full House Replacement?</label>
+                                        <label class="pt-4 pb-2" for="fullHouseReplacementSelect">Full House
+                                            Replacement?</label>
                                         <div class="form-floating">
-                                            <select class="form-select" id="fullHouseReplacementSelect" aria-label="Floating label select example">
+                                            <select class="form-select" id="fullHouseReplacementSelect"
+                                                aria-label="Floating label select example">
                                                 <option selected>Open this select menu</option>
                                                 <option value="Front">Front</option>
                                                 <option value="Right">Right</option>
@@ -981,12 +987,14 @@
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div id="partialReplacementSection" class="materialSub" style="display: none;">
                                     <div class="first">
-                                        <label class="pt-4 pb-2" for="partialReplacementSelect">Partial Replacement</label>
+                                        <label class="pt-4 pb-2" for="partialReplacementSelect">Partial
+                                            Replacement</label>
                                         <div class="form-floating">
-                                            <select class="form-select" id="partialReplacementSelect" aria-label="Floating label select example">
+                                            <select class="form-select" id="partialReplacementSelect"
+                                                aria-label="Floating label select example">
                                                 <option selected>Open this select menu</option>
                                                 <option value="Front">Front</option>
                                                 <option value="Right">Right</option>
@@ -997,21 +1005,24 @@
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div id="smallRepairsSection" class="materialSub" style="display: none;">
                                     <div class="second">
                                         <label class="pt-4 pb-2" for="smallRepairsTextArea">Small Repairs</label>
                                         <div class="textArea">
-                                            <textarea name="" rows="2" placeholder="Insert Scope of Work Here for small repairs" id="smallRepairsTextArea"></textarea>
+                                            <textarea name="" rows="2"
+                                                placeholder="Insert Scope of Work Here for small repairs"
+                                                id="smallRepairsTextArea"></textarea>
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div class="materialSub">
                                     <div class="first">
                                         <label class="pt-4 pb-2" for="materialTypeSelect">Material Type</label>
                                         <div class="form-floating">
-                                            <select class="form-select" id="materialTypeSelect" aria-label="Floating label select example">
+                                            <select class="form-select" id="materialTypeSelect"
+                                                aria-label="Floating label select example">
                                                 <option selected>Open this select menu</option>
                                                 <option value="Vinyl">Vinyl</option>
                                                 <option value="Cement Fiber">Cement Fiber</option>
@@ -1022,9 +1033,11 @@
                                         </div>
                                     </div>
                                     <div class="second">
-                                        <label class="pt-4 pb-2" for="paintingSelect">Cement Fiber/Wood (Painting)</label>
+                                        <label class="pt-4 pb-2" for="paintingSelect">Cement Fiber/Wood
+                                            (Painting)</label>
                                         <div class="form-floating">
-                                            <select class="form-select" id="paintingSelect" aria-label="Floating label select example">
+                                            <select class="form-select" id="paintingSelect"
+                                                aria-label="Floating label select example">
                                                 <option selected>Open this select menu</option>
                                                 <option value="Full House">Full House</option>
                                                 <option value="Front">Front</option>
@@ -1039,17 +1052,18 @@
                             </div>
                         </div>
                     </div>
-                    
 
 
-                    
+
+
                     <div class="fascia">
                         <div class="basicSliding">
                             <div class="gutters">
                                 <h2>Soffit Replacement</h2>
                                 <label for="soffitReplacementSelect">Select Replacement</label>
                                 <div class="form-floating">
-                                    <select class="form-select" id="soffitReplacementSelect" aria-label="Floating label select example">
+                                    <select class="form-select" id="soffitReplacementSelect"
+                                        aria-label="Floating label select example">
                                         <option selected value="">Open this select menu</option>
                                         <option value="Full House Replacement">Full House Replacement</option>
                                         <option value="Partial Replacement">Partial Replacement</option>
@@ -1058,13 +1072,15 @@
                                     <label for="soffitReplacementSelect">Please select</label>
                                 </div>
                             </div>
-                    
+
                             <div id="soffitMaterialSubId">
                                 <div id="soffitFullHouseReplacementSection" class="materialSub" style="display: none;">
                                     <div class="second">
-                                        <label class="pt-4 pb-2" for="soffitFullHouseReplacementSelect">Full House Replacement?</label>
+                                        <label class="pt-4 pb-2" for="soffitFullHouseReplacementSelect">Full House
+                                            Replacement?</label>
                                         <div class="form-floating">
-                                            <select class="form-select" id="soffitFullHouseReplacementSelect" aria-label="Floating label select example">
+                                            <select class="form-select" id="soffitFullHouseReplacementSelect"
+                                                aria-label="Floating label select example">
                                                 <option selected>Open this select menu</option>
                                                 <option value="Front">Front</option>
                                                 <option value="Right">Right</option>
@@ -1075,12 +1091,14 @@
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div id="soffitPartialReplacementSection" class="materialSub" style="display: none;">
                                     <div class="first">
-                                        <label class="pt-4 pb-2" for="soffitPartialReplacementSelect">Partial Replacement</label>
+                                        <label class="pt-4 pb-2" for="soffitPartialReplacementSelect">Partial
+                                            Replacement</label>
                                         <div class="form-floating">
-                                            <select class="form-select" id="soffitPartialReplacementSelect" aria-label="Floating label select example">
+                                            <select class="form-select" id="soffitPartialReplacementSelect"
+                                                aria-label="Floating label select example">
                                                 <option selected>Open this select menu</option>
                                                 <option value="Front">Front</option>
                                                 <option value="Right">Right</option>
@@ -1091,21 +1109,24 @@
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div id="soffitSmallRepairsSection" class="materialSub" style="display: none;">
                                     <div class="second">
                                         <label class="pt-4 pb-2" for="soffitSmallRepairsTextArea">Small Repairs</label>
                                         <div class="textArea">
-                                            <textarea name="" rows="2" placeholder="Insert Scope of Work Here for small repairs" id="soffitSmallRepairsTextArea"></textarea>
+                                            <textarea name="" rows="2"
+                                                placeholder="Insert Scope of Work Here for small repairs"
+                                                id="soffitSmallRepairsTextArea"></textarea>
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div class="materialSub">
                                     <div class="first">
                                         <label class="pt-4 pb-2" for="soffitMaterialTypeSelect">Material Type</label>
                                         <div class="form-floating">
-                                            <select class="form-select" id="soffitMaterialTypeSelect" aria-label="Floating label select example">
+                                            <select class="form-select" id="soffitMaterialTypeSelect"
+                                                aria-label="Floating label select example">
                                                 <option selected>Open this select menu</option>
                                                 <option value="Vinyl">Vinyl</option>
                                                 <option value="Cement Fiber">Cement Fiber</option>
@@ -1116,9 +1137,11 @@
                                         </div>
                                     </div>
                                     <div class="second">
-                                        <label class="pt-4 pb-2" for="soffitPaintingSelect">Cement Fiber/Wood (Painting)</label>
+                                        <label class="pt-4 pb-2" for="soffitPaintingSelect">Cement Fiber/Wood
+                                            (Painting)</label>
                                         <div class="form-floating">
-                                            <select class="form-select" id="soffitPaintingSelect" aria-label="Floating label select example">
+                                            <select class="form-select" id="soffitPaintingSelect"
+                                                aria-label="Floating label select example">
                                                 <option selected>Open this select menu</option>
                                                 <option value="Full House">Full House</option>
                                                 <option value="Front">Front</option>
@@ -1133,18 +1156,19 @@
                             </div>
                         </div>
                     </div>
-                    
+
 
                     <!-- ===== -->
-                    
-                    
+
+
                     <div class="fascia">
                         <div class="basicSliding">
                             <div class="gutters">
                                 <h2>Behind the Siding Details</h2>
                                 <label for="behindSidingSelect">Select Replacement</label>
                                 <div class="form-floating">
-                                    <select class="form-select" id="behindSidingSelect" aria-label="Floating label select example">
+                                    <select class="form-select" id="behindSidingSelect"
+                                        aria-label="Floating label select example">
                                         <option selected value="">Open this select menu</option>
                                         <option value="Full House Replacement">Full House Replacement</option>
                                         <option value="Partial Replacement">Partial Replacement</option>
@@ -1153,13 +1177,16 @@
                                     <label for="behindSidingSelect">Please select</label>
                                 </div>
                             </div>
-                    
+
                             <div id="behindSidingMaterialSubId">
-                                <div id="behindSidingFullHouseReplacementSection" class="materialSub" style="display: none;">
+                                <div id="behindSidingFullHouseReplacementSection" class="materialSub"
+                                    style="display: none;">
                                     <div class="second">
-                                        <label class="pt-4 pb-2" for="behindSidingFullHouseReplacementSelect">Full House Replacement?</label>
+                                        <label class="pt-4 pb-2" for="behindSidingFullHouseReplacementSelect">Full House
+                                            Replacement?</label>
                                         <div class="form-floating">
-                                            <select class="form-select" id="behindSidingFullHouseReplacementSelect" aria-label="Floating label select example">
+                                            <select class="form-select" id="behindSidingFullHouseReplacementSelect"
+                                                aria-label="Floating label select example">
                                                 <option selected>Open this select menu</option>
                                                 <option value="Front">Front</option>
                                                 <option value="Right">Right</option>
@@ -1170,12 +1197,15 @@
                                         </div>
                                     </div>
                                 </div>
-                    
-                                <div id="behindSidingPartialReplacementSection" class="materialSub" style="display: none;">
+
+                                <div id="behindSidingPartialReplacementSection" class="materialSub"
+                                    style="display: none;">
                                     <div class="first">
-                                        <label class="pt-4 pb-2" for="behindSidingPartialReplacementSelect">Partial Replacement</label>
+                                        <label class="pt-4 pb-2" for="behindSidingPartialReplacementSelect">Partial
+                                            Replacement</label>
                                         <div class="form-floating">
-                                            <select class="form-select" id="behindSidingPartialReplacementSelect" aria-label="Floating label select example">
+                                            <select class="form-select" id="behindSidingPartialReplacementSelect"
+                                                aria-label="Floating label select example">
                                                 <option selected>Open this select menu</option>
                                                 <option value="Front">Front</option>
                                                 <option value="Right">Right</option>
@@ -1186,19 +1216,22 @@
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div id="behindSidingSmallRepairsSection" class="materialSub" style="display: none;">
                                     <div class="second">
-                                        <label class="pt-4 pb-2" for="behindSidingSmallRepairsTextArea">Small Repairs</label>
+                                        <label class="pt-4 pb-2" for="behindSidingSmallRepairsTextArea">Small
+                                            Repairs</label>
                                         <div class="textArea">
-                                            <textarea name="" rows="2" placeholder="Insert Scope of Work Here for small repairs" id="behindSidingSmallRepairsTextArea"></textarea>
+                                            <textarea name="" rows="2"
+                                                placeholder="Insert Scope of Work Here for small repairs"
+                                                id="behindSidingSmallRepairsTextArea"></textarea>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
 
 
                     <div class="fascia">

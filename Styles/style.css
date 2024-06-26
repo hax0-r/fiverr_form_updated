@@ -93,7 +93,7 @@ nav {
 
 .scopeConnect {
     h2 {
-        font-size: 1.5rem;
+        font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.5rem);
         color: var(--gray-color);
         padding: .5rem 0;
     }
@@ -118,6 +118,7 @@ nav {
                 display: flex;
                 align-items: center;
                 gap: 2rem;
+                flex-wrap: wrap;
 
                 .first,
                 .second {
