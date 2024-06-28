@@ -60,54 +60,83 @@
                     <h2>Type of Claim </h2>
                 </div>
                 <div class="materialSub">
-                    <div class="second">
+                    <div class="tradesSet" style="width: 100%;">
+                        <div class="second">
 
-                        <label class="pt-4 pb-2" for="">Type of Claim</label>
-                        <div class="form-floating">
-                            <select class="form-select" id="TypeofClaim" aria-label="Floating label select example">
-                                <option selected>Open this select menu</option>
-                                <option value="Entire Claim start to finish">Entire Claim start to finish</option>
-                                <option value="Supplement">Supplement</option>
-                                <option value="Unknow">Unknow</option>
-                            </select>
-                            <label for="floatingSelect">Please selects</label>
+                            <label class="pt-4 pb-2" for="">Type of Claim</label>
+                            <div class="form-floating">
+                                <select class="form-select" id="TypeofClaim" aria-label="Floating label select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="Entire Claim start to finish">Entire Claim start to finish</option>
+                                    <option value="Supplement">Supplement</option>
+                                    <option value="Unknow">Unknow</option>
+                                </select>
+                                <label for="floatingSelect">Please selects</label>
+                            </div>
+
+
                         </div>
-
-
+                        <div class="first">
+                            <label class="pt-4 pb-2" for="">Structure</label>
+                            <div class="form-floating">
+                                <select class="form-select" id="Structure" aria-label="Floating label select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="Main Dwelling">Main Dwelling</option>
+                                    <option value="Shed">Shed</option>
+                                    <option value="Fence">Fence</option>
+                                    <option value="Deck">Deck</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <label for="floatingSelect">Please selects</label>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="first">
                         <label class="pt-4 pb-2" for="">Trades to be produced by the contractor?</label>
                         <div class="form-floating">
-                            <select class="form-select" id="Tradestobeproducedbythecontractor"
-                                aria-label="Floating label select example">
-                                <option selected>Open this select menu</option>
-                                <option value="Roof Only">Roof Only</option>
-                                <option value="Siding">Siding</option>
-                                <option value="Gutters">Gutters</option>
-                                <option value="Windows / Doors">Windows / Doors</option>
-                                <option value="Heat / AC">Heat / AC</option>
-                                <option value="Drywall">Drywall</option>
-                                <option value="Paint">Paint</option>
-                                <option value="Sub Contractor Estimates">Sub Contractor Estimates</option>
-                                <option value="Others">Others</option>
-                            </select>
-                            <label for="Tradestobeproducedbythecontractor">Please selects</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Roof Only" id="roofOnly">
+                                <label class="form-check-label" for="roofOnly">Roof Only</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Siding" id="siding">
+                                <label class="form-check-label" for="siding">Siding</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Gutters" id="gutters">
+                                <label class="form-check-label" for="gutters">Gutters</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Windows / Doors"
+                                    id="windowsDoors">
+                                <label class="form-check-label" for="windowsDoors">Windows / Doors</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Heat / AC" id="heatAC">
+                                <label class="form-check-label" for="heatAC">Heat / AC</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Drywall" id="drywall">
+                                <label class="form-check-label" for="drywall">Drywall</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Paint" id="paint">
+                                <label class="form-check-label" for="paint">Paint</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Sub Contractor Estimates"
+                                    id="subContractorEstimates">
+                                <label class="form-check-label" for="subContractorEstimates">Sub Contractor
+                                    Estimates</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Others" id="others">
+                                <label class="form-check-label" for="others">Others</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="first">
-                        <label class="pt-4 pb-2" for="">Structure</label>
-                        <div class="form-floating">
-                            <select class="form-select" id="Structure" aria-label="Floating label select example">
-                                <option selected>Open this select menu</option>
-                                <option value="Main Dwelling">Main Dwelling</option>
-                                <option value="Shed">Shed</option>
-                                <option value="Fence">Fence</option>
-                                <option value="Deck">Deck</option>
-                                <option value="Other">Other</option>
-                            </select>
-                            <label for="floatingSelect">Please selects</label>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="materialSub" style="padding-top: 1rem;">
                     <div class="second">
